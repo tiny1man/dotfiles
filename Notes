@@ -12,5 +12,5 @@ sudo pacman -S --needed \
     ttf-ibmplex-mono-nerd
 
 (installs basically any font you will ever need)
-also, this whole install is ~700 megabytes so dont worry about that.
-again, this will cover basically any font/emoticon you will ever need, unless you visit extremely neiche code like hyrogliphics or whatever.
+also, this whole install is ~700 megabytes AT MOST so dont worry about that.
+again, this will cover basically any font/emoticon you will ever need, unless you visit something extremely neiche like Egyptian hieroglyphs
