@@ -1,0 +1,118 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 5,
+
+    "modules-left": ["hyprland/workspaces", "group/usage"],
+    "modules-center": ["clock"],
+    "modules-right": ["battery", "wireplumber", "group/bat", "group/net", "tray"],
+
+    "group/usage": {
+        "orientation": "horizontal",
+        "modules": ["memory", "cpu", "custom/cpu_freq"]
+    },
+
+    "group/bat": {
+        "orientation": "horizontal",
+        "modules": ["backlight"]
+    },
+
+    "group/net": {
+        "orientation": "horizontal",
+        "modules": ["network"]
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+        },
+        "icon-size": 50,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+        }
+    },
+
+        "clock": {
+        "format": "{:%A, %d %B %Y | %I:%M %p}"
+ 		},
+    "battery": {
+        "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+        "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+        "interval": 1,
+        "states": {
+            "warning": 25,
+            "critical": 10
+        },
+        "tooltip": false,
+        "on-click": "2"
+    },
+
+    "wireplumber": {
+        "format": "\udb81\udd7e  {volume}%",
+        "format-muted": "󰖁  {volume}%",
+        "max-volume": 100,
+        "scroll-step": 1,
+        "on-click": "blueberry"
+    },
+
+    "backlight": {
+        "format": "\udb80\udcdf  {percent}%"
+
+    },
+
+    "memory": {
+        "interval": 1,
+        "format": "☰  {used:0.1f}GB  /  {total:0.1f}GB ",
+    },
+
+    "cpu": {
+        "format": "  {usage}%",
+         "interval": 1,
+    },
+
+
+    "network": {
+        "format": "",
+        "format-wifi": "{essid}",
+        "format-ethernet": "\udb83\udc9d  {ifname}",
+        "format-wifi": "{icon}  {essid}",
+        "format-disconnected": "\udb83\udc9c - fix yo shit nigga ",
+        "format-icons": ["\udb82\udd2f", "\udb82\udd1f", "\udb82\udd22", "\udb82\udd25", "\udb82\udd28"],
+        "tooltip-format-wifi": "{signalStrength}% - Signal Strength",
+        "tooltip-format-ethernet": "{signalStrength}% - Signal Strength",
+        "tooltip-format-disconnected": "Disconnected",
+    },
+
+    "bluetooth": {
+        "format": "\udb80\udcaf",
+        "format-disabled": "\udb80\udcb2",
+        "format-connected": "\udb80\udcb1",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "hyprland/language": {
+        "format": "{short}"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 16
+    }
+}
+
