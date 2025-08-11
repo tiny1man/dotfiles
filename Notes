@@ -1,0 +1,14 @@
+Recommended packages
+
+sudo pacman -S --needed \
+    ttf-dejavu \
+    ttf-liberation \
+    noto-fonts \
+    noto-fonts-cjk \
+    noto-fonts-emoji \
+    ttf-font-awesome \
+    ttf-iosevka-nerd \
+    ttf-inconsolata-nerd \
+    ttf-ibmplex-mono-nerd
+
+(installs basically any font you will ever need)
