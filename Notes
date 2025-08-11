@@ -1,5 +1,8 @@
 Recommended packages
 
+sudo pacman -S mpv
+sudo pacman -S gwenview
+
 sudo pacman -S --needed \
     ttf-dejavu \
     ttf-liberation \
