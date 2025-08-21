@@ -1,3 +1,4 @@
+
 {
     "layer": "top",
     "position": "top",
@@ -10,7 +11,7 @@
 
     "group/usage": {
         "orientation": "horizontal",
-        "modules": ["memory", "cpu", "custom/cpu_freq"]
+        "modules": ["memory", "cpu"]
     },
 
     "group/bat": {
@@ -61,13 +62,26 @@
         "on-click": "2"
     },
 
-    "wireplumber": {
+     "wireplumber": {
         "format": "\udb81\udd7e  {volume}%",
         "format-muted": "󰖁  {volume}%",
         "max-volume": 100,
         "scroll-step": 1,
         "on-click": "blueberry"
     },
+
+     "pipewire": {
+       "show-source": true,
+       "format-source": "{icon} Mic: {volume}%",
+       "format-source-muted": "{icon} Mic Muted",
+       "format": "{icon} {volume}%",
+       "format-muted": "{icon} Muted",
+       "scroll-step": 5,
+       "on-click": "wpctl set-source-mute @DEFAULT_SOURCE@ toggle",
+       "icon": "",
+       "icon-muted": ""
+    },
+
 
     "backlight": {
         "format": "\udb80\udcdf  {percent}%"
