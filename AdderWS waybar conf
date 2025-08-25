@@ -46,16 +46,19 @@
 
         "clock": {
         "format": "{:%A, %d %B %Y | %I:%M %p}",
-        "tooltip": false
+        "tooltip": false,
+        "scroll-step": 1
  		},
 
 
     "battery": {
-        "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+      "on-scroll-up": "notify-send 'Stupit Hoe!'"
+      "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
         "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
         "interval": 1,
+        "scroll-step": 1,
         "states": {
             "warning": 25,
             "critical": 10
@@ -94,12 +97,14 @@
     "memory": {
         "interval": 1,
         "format": "☰  {used:0.1f}GB  /  {total:0.1f}GB ",
-        "tooltip": false
+        "tooltip": false,
+        "on-scroll-up": "notify-send 'Stupit Hoe!'"
     },
 
     "cpu": {
         "format": "  {usage}%",
          "interval": 1,
+         "on-scroll-up": "notify-send 'Stupit Hoe!'"
     },
 
 
@@ -113,6 +118,8 @@
         "tooltip-format-wifi": "{signalStrength}% - Signal Strength",
         "tooltip-format-ethernet": "{signalStrength}% - Signal Strength",
         "tooltip-format-disconnected": "Disconnected",
+        "on-scroll-up": "notify-send 'Stupit Hoe!'",
+        "scroll-step": 10,"on-scroll-up": "notify-send 'Stupit Hoe!'"
     },
 
     "bluetooth": {
@@ -121,7 +128,8 @@
         "format-connected": "\udb80\udcb1",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-scroll-up": "notify-send 'Stupit Hoe!'"
     },
 
     "hyprland/language": {
