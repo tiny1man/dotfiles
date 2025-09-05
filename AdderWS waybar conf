@@ -52,8 +52,8 @@
 
 
     "battery": {
-      "on-scroll-up": "notify-send 'Stupit Hoe!'"
-      "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
+      "on-scroll-up": "notify-send 'Stupit Hoe!'",
+        "format": "<span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
         "format-icons": ["", "", "", "", ""],
         "format-charging": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
         "format-full": "<span font='Font Awesome 5 Free'></span>  <span font='Font Awesome 5 Free 11'>{icon}</span>  {capacity}%",
