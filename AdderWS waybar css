@@ -1,3 +1,6 @@
+WARNING: This config doenst work on a couple of machines, but I will list another one after this that will probably work, and you can coustomise it further if you want <3
+
+
 @define-color foreground #eff0f1;
 @define-color foreground-inactive #7f8c8d;
 @define-color background #232629;
@@ -52,5 +55,58 @@
 #language,
 #network {
     margin-right: 0.8em;
+}
+
+
+
+
+
+
+
+Compatibility CSS code:
+
+
+
+
+
+
+
+/* Waybar styling */
+
+/* Whole bar */
+#waybar {
+  background: #1e1e2e;
+  color: #ffffff;
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 16px;   /* bigger text */
+  border-bottom: 2px solid #444;
+  padding: 4px 8px;  /* extra breathing room */
+}
+
+/* Modules */
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#wireplumber,
+#backlight,
+#tray {
+  padding: 0 14px;   /* more padding between modules */
+}
+
+/* Workspaces */
+#workspaces button {
+  padding: 4px 8px;
+  margin: 0 4px;
+  border-radius: 8px;
+  background: transparent;
+  color: #bbb;
+  font-size: 16px;   /* workspace numbers/icons bigger too */
+}
+
+#workspaces button.active {
+  background: #4e417e;
+  color: #fff;
 }
 
