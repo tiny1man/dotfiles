@@ -19,6 +19,14 @@ sudo pacman -S --needed \
 also, this whole install is ~700 megabytes AT MOST so dont worry about that.
 again, this will cover basically any font/emoticon you will ever need, unless you visit something extremely neiche like Egyptian hieroglyphs
 
+if you want to install ALL available fonts, like ALL of them, enter this:
+
+
+yay -S all-repository-fonts
+
+This on the otherhand is 11413.03 MiB or ELEVEN GIGABYTES
+yea, 11 gigabytes of straight fonts. But hey, youll never have to see that missing texture box again!
+
 
 one-and-done for most shit:
 
