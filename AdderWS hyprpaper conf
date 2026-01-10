@@ -1,0 +1,21 @@
+# Preload images (do this first for all wallpapers you plan to use)
+preload = /home/dre/Downloads/wallpapers/incognitobg.jpg
+
+# Set wallpaper on all monitors (use empty monitor= for fallback/default)
+wallpaper {
+    monitor =
+    path = /home/dre/Downloads/wallpapers/incognitobg.jpg
+    fit_mode = cover  # or contain, fill, tile, stretch – cover is usually best
+}
+
+# Optional: If you want different wallpapers per monitor (replace with your actual monitor names)
+# wallpaper {
+#     monitor = eDP-1
+#     path = /home/dre/Downloads/wallpapers/incognitobg.jpg
+#     fit_mode = cover
+# }
+# wallpaper {
+#     monitor = HDMI-A-1
+#     path = /home/dre/Downloads/wallpapers/incognitobg.jpg
+#     fit_mode = cover
+# }
